@@ -7,7 +7,8 @@ structural-css
 * Le nom commence par le mot clé `this`
 
 ```css
-.this-component-name
-.component-name--variation-name
-.is-qualifier-name
+.this-component-name { }
+.component-name--variation-name { }
+.component-name-descendant { }
+.is-qualifier-name { }
 ```
