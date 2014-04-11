@@ -86,10 +86,10 @@ Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture d
 <a name="variation"></a>
 ### Variation
 
-Une variation d'un composant est une classe qui commence toujours par le nom du composant séparé par deux tirets :  
+Une variation d'un composant est une classe qui commence par le nom du composant séparé par deux tirets :  
 `component-name--<variation-name>`
 
-Elle permet de décliner le style du composant sous différents styles. La classe doit être ajouté à l'élément HTML en plus de la classe du composant.
+Elle permet de décliner l'affichage du composant sous différents styles. La classe doit être ajouté à l'élément HTML en plus de la classe du composant.
 
 ```css
 .component-name--variation-name { }
@@ -123,7 +123,7 @@ La classe est attachée à un noeud du composant, celle-ci applique un style dir
 Une classe qualifieur commence toujours par le mot clé `is` :  
 `is-<qualifier-name>`
 
-Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé).
+Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé, affiché - masqué, etc).
 
 Il est important de noter qu'il est interdit de styler cette classe directement, elle doit être utilisé conjointement avec une classe du composant.
 
