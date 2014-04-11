@@ -132,13 +132,43 @@ Il est interdit de styler cette classe directement, elle doit être utilisée co
 A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaScript pour modifier l'état du composant à un instant _t_.
 
 ```css
-.component-name-descendent-name.is-qualifier-name { }
+.this-level {
+	margin: 0;
+	padding: 0;
+}
+
+	.level-item {
+		height: 50px;
+		line-height: 50px;
+		padding: 0 10px 0 25px;
+		color: #888;
+		font-size: 14px;
+		position: relative;
+	}
+
+	.level-item + .level-item {
+		border-top: 1px solid #d7d7d7;
+	}
+
+		.level-item-icon {
+			display: none;
+			position: absolute;
+			left: 10px;
+			top: 14px;
+			font-size: 22px;
+		}
 ```
 
 ```html
-<div class="this-component-name component-name--variation-name">
-  <p class="component-name-descendent-name is-qualifier-name"></p>
-</div>
+<ul class="this-level">
+    <li class="level-item"><i class="level-item-icon"></i> Too High</li>
+    <li class="level-item"><i class="level-item-icon"></i> Higher</li>
+    <li class="level-item"><i class="level-item-icon"></i> Market Level</li>
+    <li class="level-item is-selected"><i class="level-item-icon"></i> Lower</li>
+    <li class="level-item"><i class="level-item-icon"></i> Too Low</li>
+</ul>
 ```
+
+## Exemple
 
 
