@@ -9,7 +9,7 @@ L'objectif est d'apporter une convention à l'écriture du CSS en intégrant des
 
 1. [Composant autonome](#composant-autonome)
 2. [Créer vaut mieux que modifier](#creer-vaut-mieux-que-modifier)
-3. [Dépendance](#dependance)
+3. [Dépendance au DOM](#dependance-au-dom)
 4. [Faible encapsulation](#faible-encapsulation)
 5. [Documentation](#documentation)
 
@@ -27,12 +27,13 @@ Si le besoin est trop éloigné de la conception originale du composant il est p
 
 Une variation ne devrait pas modifier radicalement l'apparence du composant ou demander à l'utilisateur de comprendre comment il fonctionne.
 
-<a name="dependance"></a>
-## Dépendance
+<a name="dependance-au-dom"></a>
+## Dépendance au DOM
 
-De manière générale le style appliqué à un élément HTML doit correspondre à une classe. 
-Il est important de ne pas appliquer le style à un élément particulier du DOM ou à une structure particulière du DOM.
-Cela limite très fortement la dépendance à la structure HTML et facilite la lecture du CSS et la maintenabilité.
+De manière générale, le style appliqué à un élément HTML doit correspondre à une classe. 
+
+Il est important de ne pas appliquer de style à un élément particulier du DOM ou à une structure particulière du DOM.
+Cela limite très fortement la dépendance à la structure HTML et améliore grandement la robustesse de l'intégration tout en facilitant la lecture du CSS.
 
 <a name="faible-encapsulation"></a>
 ## Faible encapsulation
