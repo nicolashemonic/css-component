@@ -62,7 +62,7 @@ L'écriture du CSS se fait en dash-case tout en minuscule.
 <a name="composant"></a>
 ### Composant
 
-Sa classe commence toujours par le mot clé `this` ce qui permet de l'identifier facilement et d'en délimiter sa porté.
+La classe d'un composant commence toujours par le mot clé `this` ce qui permet de l'identifier facilement et d'en délimiter sa porté.
 
 Son nom est l'élément central de toute sa structure :  
 `this-<component-name>[--variation-name|-descendent-name]`
@@ -84,7 +84,7 @@ Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture d
 <a name="variation"></a>
 ### Variation
 
-Une variation d'un composant est une classe qui commence par le nom du composant séparé par deux tirets :  
+La classe d'une variation d'un composant commence par le nom de celui-ci séparé par deux tirets :  
 `component-name--<variation-name>`
 
 Elle permet de décliner l'affichage du composant sous différents styles. La classe doit être ajouté à l'élément HTML en plus de la classe du composant.
@@ -100,7 +100,7 @@ Elle permet de décliner l'affichage du composant sous différents styles. La cl
 <a name="descendant"></a>
 ### Descendant
 
-Un descendant est une classe qui commence toujours par le nom du composant :  
+La classe d'un descendant d'un composant commence toujours par le nom de celui-ci :  
 `component-name-<descendent-name>`
 
 La classe est attachée à un noeud du composant, celle-ci applique un style directement sur l'élément HTML sur lequel elle est ajoutée.
@@ -118,7 +118,7 @@ La classe est attachée à un noeud du composant, celle-ci applique un style dir
 <a name="qualifieur"></a>
 ### Qualifieur
 
-Une classe qualifieur commence toujours par le mot clé `is` :  
+La classe d'un qualifieur attachée à un composant commence toujours par le mot clé `is` :  
 `is-<qualifier-name>`
 
 Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé, affiché - masqué, etc).
