@@ -95,3 +95,19 @@ Une variation d'un composant est une classe qui modifie l'affichage de base du c
 ```html
 <div class="this-component-name component-name--variation-name"></div>
 ```
+
+<a name="descendant"></a>
+### Déscendant
+
+Un déscendant est une classe attachée à un noeud du composant. Cette classe applique un style directement sur l'élément HTML sur lequel elle est ajoutée.
+
+```css
+.component-name-descendent-name { }
+```
+
+```html
+<div class="this-component-name component-name--variation-name">
+  <p class="component-name-descendent-name"></p>
+</div>
+```
+
