@@ -14,14 +14,14 @@ L'objectif est d'apporter une convention à l'écriture du CSS en intégrant des
 5. [Documentation](#documentation)
 
 <a name="composant-autonome"></a>
-## Composant autonome
+### Composant autonome
 
 Chaque composant est autonome. Il possède son propre HTML, CSS, JavaScript ou tout autre ressource limitant toute dépendance au contexte d'affichage dans lequel il évolue.
 
 Le bénéfice est de pouvoir le réutiliser facilement.
 
 <a name="creer-vaut-mieux-que-modifier"></a>
-## Créer plutôt que modifier
+### Créer plutôt que modifier
 
 Un composant répond à un besoin qui lui est propre. Il est conseillé de limiter sa modification au sein d'un contexte.
 
@@ -30,7 +30,7 @@ Si le besoin est trop éloigné sa conception originale il est préférable d'en
 Une variation ne devrait pas modifier radicalement l'apparence du composant ou demander à l'utilisateur de comprendre comment il fonctionne.
 
 <a name="dependance-au-dom"></a>
-## Dépendance au DOM
+### Dépendance au DOM
 
 De manière générale, le style appliqué à un élément HTML doit correspondre à une classe. 
 
@@ -38,7 +38,7 @@ Il est important de ne pas appliquer de style à un élément particulier du DOM
 Cela limite très fortement la dépendance à la structure HTML et améliore grandement la robustesse de l'intégration tout en facilitant la lecture du CSS.
 
 <a name="faible-encapsulation"></a>
-## Faible encapsulation
+### Faible encapsulation
 
 La compléxité est un problème important pour les grosses applications évolutives. Moins les composants sont imbriqués et plus l'application en récolte les bénéfices.
 
@@ -47,19 +47,25 @@ Tout d'abord, limiter au maximum la réutilisation de code à travers les compos
 Un composant ne devrait pas avoir connaissance de l'éxistance ou de l'apparence d'un composant qui lui est imbriqué. Il est préférable de considérer dans ce cas que le composant imbriqué fait partie intégrante du composant et qu'il doit en avoir sa propre implémentation.
 
 <a name="documentation"></a>
-## Documentation
+### Documentation
 
 Ecrire de petits composants indépendants bien documenté.
 La documentation précise comment le composant devrait être utilisé, pourquoi certaines propriétés CSS sont nécéssaires lors de son implémentation. Il est important de ne pas considérer que le CSS est une documentation en soit.
 
-## Syntaxe d'un composant graphique
+## Convention de nommage
 
-* Ecriture en dash-case
+Ecriture en dash-case.
+
+1. [Composant](#composant)
+2. [Variation](#variation)
+3. [Déscendant](#descendant)
+4. [Qualifieur](#qualifier)
+
+<a name="composant"></a>
+### Composant
+
 * Le nom commence par le mot clé `this`
 
 ```css
 .this-component-name { }
-.component-name--variation-name { }
-.component-name-descendant { }
-.is-qualifier-name { }
 ```
