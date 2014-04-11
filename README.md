@@ -66,7 +66,7 @@ L'écriture se fait en dash-case tout en minuscule.
 
 Sa classe commence toujours par le mot clé `this` ce qui permet de l'identifier facilement et d'en délimiter sa porté.
 
-Son nom est l'élément central de toute sa structure :
+Son nom est l'élément central de toute sa structure :  
 `this-<component-name>[--variation-name|-descendent-name]`
 
 Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture du HTML et CSS:
@@ -99,7 +99,7 @@ Une variation d'un composant est une classe qui modifie l'affichage de base du c
 <a name="descendant"></a>
 ### Déscendant
 
-Un déscendant est une classe qui commence toujours par le nom du composant : 
+Un déscendant est une classe qui commence toujours par le nom du composant :  
 `component-name-<descendent-name>`
 
 La classe est attachée à un noeud du composant, celle-ci applique un style directement sur l'élément HTML sur lequel elle est ajoutée.
@@ -117,7 +117,7 @@ La classe est attachée à un noeud du composant, celle-ci applique un style dir
 <a name="qualifieur"></a>
 ### Qualifieur
 
-Une classe qualifieur commence toujours par le mot clé `is` : 
+Une classe qualifieur commence toujours par le mot clé `is` :  
 `is-<qualifier-name>`
 
 Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé).
