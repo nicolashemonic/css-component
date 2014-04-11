@@ -25,7 +25,7 @@ Le bénéfice est de pouvoir le réutiliser facilement.
 
 Un composant répond à un besoin qui lui est propre. Il est conseillé de limiter sa modification au sein d'un contexte.
 
-Si le besoin est trop éloigné de la conception originale du composant il est préférable d'en créer un nouveau pour répondre précisément au besoin.
+Si le besoin est trop éloigné sa conception originale il est préférable d'en créer un nouveau pour répondre plus précisément au nouveau besoin.
 
 Une variation ne devrait pas modifier radicalement l'apparence du composant ou demander à l'utilisateur de comprendre comment il fonctionne.
 
