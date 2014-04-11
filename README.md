@@ -98,9 +98,9 @@ Elle permet de décliner l'affichage du composant sous différents styles. La cl
 ```
 
 <a name="descendant"></a>
-### Déscendant
+### Descendant
 
-Un déscendant est une classe qui commence toujours par le nom du composant :  
+Un descendant est une classe qui commence toujours par le nom du composant :  
 `component-name-<descendent-name>`
 
 La classe est attachée à un noeud du composant, celle-ci applique un style directement sur l'élément HTML sur lequel elle est ajoutée.
