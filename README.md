@@ -66,8 +66,14 @@ L'écriture se fait en dash-case tout en minuscule.
 
 Sa classe commence toujours par le mot clé `this` ce qui permet de l'identifier facilement et d'en délimiter sa porté.
 
-Son nom est la base de toute sa structure:
+Son nom est l'élément central de toute sa structure:
 `this-<component-name>[--variation-name|-descendent-name]`
+
+Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture du HTML et CSS:
+
+* Aide à distinguer les classes de base du composant, de ses variations et de ses déscendants
+* Diminue considérablement la dépendance entre le DOM et le CSS
+* Le poids du sélecteur reste faible
 
 ```css
 .this-component-name { }
@@ -76,3 +82,8 @@ Son nom est la base de toute sa structure:
 ```html
 <div class="this-component-name"></div>
 ```
+
+<a name="variation"></a>
+### Variation
+
+
