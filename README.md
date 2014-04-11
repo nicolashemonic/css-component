@@ -40,9 +40,9 @@ Cela limite très fortement la dépendance à la structure HTML et améliore gra
 <a name="faible-encapsulation"></a>
 ## Faible encapsulation
 
-La compléxité est un problème important pour les grosses applications souhaitant évoluer. Moins les composants sont imbriqués et plus l'application en récolte les bénéfices.
+La compléxité est un problème important pour les grosses applications évolutives. Moins les composants sont imbriqués et plus l'application en récolte les bénéfices.
 
-Tout d'abord, limiter au maximum la réutilisation de code à travers les composants. Il est préférable d'isoler chaque composant plutot que d'essayer de limiter la répétition des propriétés en les partageant. Ceci aurait pour incidence de rendre des composants dépendants entre eux.
+Tout d'abord, limiter au maximum la réutilisation de code à travers les composants. Il est préférable d'isoler chaque composant plutot que d'essayer de limiter la répétition de ses propriétés en les mutualisant. Ceci aurait pour incidence de rendre des composants dépendants entre eux.
 
 Un composant ne devrait pas avoir connaissance de l'éxistance ou de l'apparence d'un composant qui lui est imbriqué. Il est préférable de considérer dans ce cas que le composant imbriqué fait partie intégrante du composant et qu'il doit en avoir sa propre implémentation.
 
