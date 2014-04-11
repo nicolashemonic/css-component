@@ -1,4 +1,4 @@
-css-component
+Css-Component
 =============
 
 Méthodologie CSS pour la conception de composants graphiques autonomes, configurables et réutilisables.
