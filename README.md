@@ -11,8 +11,7 @@ L'objectif est d'apporter une convention à l'écriture du CSS en intégrant des
 2. [Etendre plutot que modifier](#etendre-plutot-que-modifier)
 3. [Dépendance](#dependance)
 4. [Faible encapsulation](#faible-encapsulation)
-5. [Soft encapsulation](#encapsulation)
-6. [Documentation](#documentation)
+5. [Documentation](#documentation)
 
 <a name="composant-autonome"></a>
 ## Composant autonome
