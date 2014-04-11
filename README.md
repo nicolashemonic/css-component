@@ -114,7 +114,10 @@ Un déscendant est une classe attachée à un noeud du composant. Cette classe a
 <a name="qualifieur"></a>
 ### Qualifieur
 
-Un qualifieur est une classe qui modifie l'affichage du composant. Cette classe peut être utilisé pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé).
+Une classe qualifieur commence toujours par le mot clé `is`:
+`is-<qualifier-name>`
+
+Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé).
 
 Il est important de noter qu'il est interdit de styler cette classe directement, elle doit être utilisé conjointement avec une classe.
 
