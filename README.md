@@ -5,7 +5,7 @@ Méthodologie CSS pour la conception de composants graphiques autonomes, configu
 
 ## Définition
 
-Un composant graphique est un élément de base d'une interface graphique avec lequel l'utilisateur peut éventuellement interagir (par exemple une liste, un menu, etc). L'assemblage de plusieurs composants forme une interface graphique complète.
+Un composant graphique est un élément de base d'une interface graphique avec lequel l'utilisateur peut _éventuellement_ interagir (par exemple une liste, un menu, etc). L'assemblage de plusieurs composants forme une interface graphique complète.
 
 ## Principe général
 
