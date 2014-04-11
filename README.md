@@ -1,5 +1,5 @@
-structural-css
-==============
+css-component
+=============
 
 Méthodologie CSS pour la conception de composants graphiques autonomes, configurables et réutilisables.
 
