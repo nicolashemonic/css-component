@@ -86,7 +86,10 @@ Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture d
 <a name="variation"></a>
 ### Variation
 
-Une variation d'un composant est une classe qui modifie l'affichage de base du composant sous différentes formes. La classe doit être ajouté à l'élément HTML en plus de la classe du composant.
+Une variation d'un composant est une classe qui commence toujours par le nom du composant séparé par deux tirets :  
+`component-name--<variation-name>`
+
+Elle modifie l'affichage de base du composant sous différentes formes. La classe doit être ajouté à l'élément HTML en plus de la classe du composant.
 
 ```css
 .component-name--variation-name { }
