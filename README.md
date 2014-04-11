@@ -54,6 +54,8 @@ La documentation précise comment le composant devrait être utilisé, pourquoi 
 
 L'écriture du CSS se fait en dash-case, tout en minuscule.
 
+Un composant est constitué de la manière suivante :
+
 1. [Composant](#composant)
 2. [Variation](#variation)
 3. [Descendant](#descendant)
@@ -62,16 +64,16 @@ L'écriture du CSS se fait en dash-case, tout en minuscule.
 <a name="composant"></a>
 ### Composant
 
-La classe d'un composant commence toujours par le mot clé `this` ce qui permet de l'identifier facilement et d'en délimiter sa porté.
+La classe d'un composant commence toujours par le mot clé `this` qui permet de l'identifier facilement et d'en délimiter sa porté.
 
 Son nom est l'élément central de toute sa structure :  
 `this-<component-name>[--variation-name|-descendent-name]`
 
-Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture du HTML et CSS:
+Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture du HTML et du CSS:
 
-* Aide à distinguer les classes de base du composant, de ses variations et de ses déscendants
+* Aide à distinguer les classes de base du composant, de ses variations et de ses descendants
 * Diminue considérablement la dépendance entre le DOM et le CSS
-* Le poids du sélecteur reste faible
+* Le poids du sélecteur reste faible (surcharge aisée)
 
 ```css
 .this-component-name { }
