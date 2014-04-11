@@ -125,9 +125,9 @@ La classe d'un qualifieur attachée à un composant commence toujours par le mot
 
 Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé, affiché - masqué, etc).
 
-Il est interdit de styler cette classe directement, elle doit être utilisé conjointement avec une classe du composant.
+Il est interdit de styler cette classe directement, elle doit être utilisée conjointement avec une classe du composant.
 
-A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaScript pour modifier l'état du composant à un instant t.
+A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaScript pour modifier l'état du composant à un instant _t_.
 
 ```css
 .component-name-descendent-name.is-qualifier-name { }
