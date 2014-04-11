@@ -99,7 +99,10 @@ Une variation d'un composant est une classe qui modifie l'affichage de base du c
 <a name="descendant"></a>
 ### Déscendant
 
-Un déscendant est une classe attachée à un noeud du composant. Cette classe applique un style directement sur l'élément HTML sur lequel elle est ajoutée.
+Un déscendant est une classe qui commence toujours par le nom du composant : 
+`component-name-<descendent-name>`
+
+La classe est attachée à un noeud du composant, celle-ci applique un style directement sur l'élément HTML sur lequel elle est ajoutée.
 
 ```css
 .component-name-descendent-name { }
@@ -119,9 +122,9 @@ Une classe qualifieur commence toujours par le mot clé `is` :
 
 Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé).
 
-Il est important de noter qu'il est interdit de styler cette classe directement, elle doit être utilisé conjointement avec une classe.
+Il est important de noter qu'il est interdit de styler cette classe directement, elle doit être utilisé conjointement avec une classe du composant.
 
-A noter qu'une classe qualifieur peut être ajouté ou supprimé par le JavaScript pour modifier l'état du composant à un instant t.
+A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaScript pour modifier l'état du composant à un instant t.
 
 ```css
 .component-name-descendent-name.is-qualifier-name { }
