@@ -132,6 +132,18 @@ Il est interdit de styler cette classe directement, elle doit être utilisée co
 A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaScript pour modifier l'état du composant à un instant _t_.
 
 ```css
+.component-name-descendent-name.is-qualifier-name { }
+```
+
+```html
+<div class="this-component-name component-name--variation-name">
+  <p class="component-name-descendent-name is-qualifier-name"></p>
+</div>
+```
+
+## Exemple
+
+```css
 .this-level {
 	margin: 0;
 	padding: 0;
@@ -168,7 +180,5 @@ A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaSc
     <li class="level-item"><i class="level-item-icon"></i> Too Low</li>
 </ul>
 ```
-
-## Exemple
 
 
