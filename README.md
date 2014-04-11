@@ -52,7 +52,7 @@ La documentation précise comment le composant devrait être utilisé, pourquoi 
 
 ## Convention de nommage
 
-L'écriture du CSS se fait en dash-case tout en minuscule.
+L'écriture du CSS se fait en dash-case, tout en minuscule.
 
 1. [Composant](#composant)
 2. [Variation](#variation)
