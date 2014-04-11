@@ -54,7 +54,7 @@ La documentation précise comment le composant devrait être utilisé, pourquoi 
 
 ## Convention de nommage
 
-L'écriture se fait en dash-case tout minuscule.
+L'écriture se fait en dash-case tout en minuscule.
 
 1. [Composant](#composant)
 2. [Variation](#variation)
@@ -64,11 +64,15 @@ L'écriture se fait en dash-case tout minuscule.
 <a name="composant"></a>
 ### Composant
 
-Sa classe commence par le mot clé `this`, cela permet de l'identifier facilement.
+Sa classe commence toujours par le mot clé `this` ce qui permet de l'identifier facilement et d'en délimiter sa porté.
 
 Son nom est la base de toute sa structure:
-`<this-component-name>[--variation-name|-descendent-name]`
+`this-<component-name>[--variation-name|-descendent-name]`
 
 ```css
 .this-component-name { }
+```
+
+```html
+<div class="this-component-name"></div>
 ```
