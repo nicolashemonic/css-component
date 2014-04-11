@@ -8,7 +8,7 @@ L'objectif est d'apporter une convention à l'écriture du CSS en intégrant des
 ## Principe général
 
 1. [Composant autonome](#composant-autonome)
-2. [Créer vaut mieux que modifier](#creer-vaut-mieux-que-modifier)
+2. [Créer plutôt que modifier](#creer-plutot-que-modifier)
 3. [Dépendance au DOM](#dependance-au-dom)
 4. [Faible encapsulation](#faible-encapsulation)
 5. [Documentation](#documentation)
@@ -21,7 +21,7 @@ Chaque composant est autonome. Il possède son propre HTML, CSS, JavaScript ou t
 Le bénéfice est de pouvoir le réutiliser facilement.
 
 <a name="creer-vaut-mieux-que-modifier"></a>
-## Créer vaut mieux que modifier
+## Créer plutôt que modifier
 
 Un composant répond à un besoin qui lui est propre. Il est conseillé de limiter sa modification au sein d'un contexte.
 
