@@ -1,9 +1,13 @@
 structural-css
 ==============
 
-Méthodologie CSS de conception de composants graphiques réutilisables et configurables.
+Méthodologie CSS pour la conception de composants graphiques configurables et réutilisables.
 
-L'objectif est d'apporter une convention à l'écriture du CSS en intégrant des composants graphiques simples et autonomes conçus pour le templating côté client.
+L'objectif est d'apporter une convention à l'écriture du CSS en intégrant des composants simples et autonomes.
+
+## Définition
+
+Le composant graphique est un élément de base de l'interface graphique avec lequel l'utilisateur peut interagir (par exemple un calendrier, un menu, etc). L'assemblage de plusieurs composants forme une interface graphique complète.
 
 ## Principe général
 
