@@ -8,7 +8,7 @@ L'objectif est d'apporter une convention à l'écriture du CSS en intégrant des
 ## Principe général
 
 1. [Composant autonome](#composant-autonome)
-2. [Etendre plutot que modifier](#etendre-plutot-que-modifier)
+2. [Créer vaut mieux que modifier](#creer-vaut-mieux-que-modifier)
 3. [Dépendance](#dependance)
 4. [Faible encapsulation](#faible-encapsulation)
 5. [Documentation](#documentation)
@@ -18,12 +18,14 @@ L'objectif est d'apporter une convention à l'écriture du CSS en intégrant des
 
 Chaque composant est autonome. Il possède son propre HTML, CSS, JavaScript ou tout autre ressource limitant toute dépendance au contexte d'affichage dans lequel il évolue.
 
-<a name="etendre-plutot-que-modifier"></a>
-## Etendre plutot que modifier
+<a name="creer-vaut-mieux-que-modifier"></a>
+## Créer vaut mieux que modifier
 
-Etendre l'affichage d'un composant avec une ou plusieurs classes est préféré à la modification directe des sélecteurs qui lui sont propre. Cette pratique limite la compléxité au sein du contexte.
+Un composant répond à un besoin qui lui est propre. Il est conseillé de limiter sa modification au sein d'un contexte.
 
-Il est préférrable de limiter le nombre de variation d'un composant. Une variation ne devrait pas modifier radicalement l'apparence du composant ou demander à l'utilisateur de comprendre comment il fonctionne.
+Si le besoin est trop éloigné de la conception originale du composant il est préférable d'en créer un nouveau pour répondre précisément au besoin.
+
+Une variation ne devrait pas modifier radicalement l'apparence du composant ou demander à l'utilisateur de comprendre comment il fonctionne.
 
 <a name="dependance"></a>
 ## Dépendance
