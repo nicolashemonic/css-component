@@ -18,6 +18,8 @@ L'objectif est d'apporter une convention à l'écriture du CSS en intégrant des
 
 Chaque composant est autonome. Il possède son propre HTML, CSS, JavaScript ou tout autre ressource limitant toute dépendance au contexte d'affichage dans lequel il évolue.
 
+Le bénéfice est de pouvoir le réutiliser facilement.
+
 <a name="creer-vaut-mieux-que-modifier"></a>
 ## Créer vaut mieux que modifier
 
