@@ -16,16 +16,14 @@ L'objectif est d'apporter une convention à l'écriture du CSS en intégrant des
 <a name="composant-autonome"></a>
 ### Composant autonome
 
-Chaque composant est autonome. Il possède son propre HTML, CSS, JavaScript ou tout autre ressource limitant toute dépendance au contexte d'affichage dans lequel il évolue.
-
-Le bénéfice est de pouvoir le réutiliser facilement.
+Chaque composant est autonome. Il possède son propre HTML, CSS, JavaScript ou tout autre ressource limitant toute dépendance au contexte d'affichage dans lequel il évolue. Idéalement, le CSS et le JavaScript sont écrits dans des fichiers qui leurs sont propre afin de les extraire facilement du contexte dans lequel ils sont ancrés.
 
 <a name="creer-vaut-mieux-que-modifier"></a>
 ### Créer plutôt que modifier
 
 Un composant répond à un besoin qui lui est propre. Il est conseillé de limiter sa modification au sein d'un contexte.
 
-Si le besoin est trop éloigné sa conception originale il est préférable d'en créer un nouveau pour répondre plus précisément au nouveau besoin.
+Si le besoin est trop éloigné de sa conception originale il est préférable d'en créer un nouveau pour répondre plus précisément au nouveau besoin.
 
 Une variation ne devrait pas modifier radicalement l'apparence du composant ou demander à l'utilisateur de comprendre comment il fonctionne.
 
@@ -54,12 +52,12 @@ La documentation précise comment le composant devrait être utilisé, pourquoi 
 
 ## Convention de nommage
 
-L'écriture se fait en dash-case tout en minuscule.
+L'écriture du CSS se fait en dash-case tout en minuscule.
 
 1. [Composant](#composant)
 2. [Variation](#variation)
-3. [Déscendant](#descendant)
-4. [Qualifieur](#qualifier)
+3. [Descendant](#descendant)
+4. [Qualifieur](#qualifieur)
 
 <a name="composant"></a>
 ### Composant
