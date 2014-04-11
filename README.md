@@ -111,3 +111,21 @@ Un déscendant est une classe attachée à un noeud du composant. Cette classe a
 </div>
 ```
 
+<a name="qualifieur"></a>
+### Qualifieur
+
+Un qualifieur est une classe qui modifie l'affichage d'une sous partie du composant. Il est important de noter qu'il est interdit de styler cette classe directement, elle doit être utilisé conjointement avec une classe.
+
+A noter qu'une classe qualifieur peut être ajouté ou supprimé par le JavaScript pour modifier l'état du composant à un instant t.
+
+```css
+.component-name-descendent-name.is-qualifier-name { }
+```
+
+```html
+<div class="this-component-name component-name--variation-name">
+  <p class="component-name-descendent-name is-qualifier-name"></p>
+</div>
+```
+
+
