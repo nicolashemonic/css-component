@@ -67,6 +67,7 @@ L'écriture se fait en dash-case tout en minuscule.
 Sa classe commence toujours par le mot clé `this` ce qui permet de l'identifier facilement et d'en délimiter sa porté.
 
 Son nom est l'élément central de toute sa structure:
+
 `this-<component-name>[--variation-name|-descendent-name]`
 
 Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture du HTML et CSS:
@@ -115,6 +116,7 @@ Un déscendant est une classe attachée à un noeud du composant. Cette classe a
 ### Qualifieur
 
 Une classe qualifieur commence toujours par le mot clé `is`:
+
 `is-<qualifier-name>`
 
 Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé).
