@@ -46,7 +46,7 @@ La compléxité est un problème important pour les grosses applications évolut
 
 Tout d'abord, limiter au maximum la réutilisation de code à travers les composants. Il est préférable d'isoler chaque composant plutot que d'essayer de limiter la répétition de ses propriétés en les mutualisant. Ceci aurait pour incidence de rendre des composants dépendants entre eux.
 
-Un composant ne devrait pas avoir connaissance de l'éxistance ou de l'apparence d'un composant qui lui est imbriqué. Il est préférable de considérer dans ce cas que le composant imbriqué fait partie intégrante du composant qui l'héberge et qu'il doit en avoir sa propre implémentation.
+Un composant _a_ ne devrait pas connaître un composant _b_ qui lui est imbriqué. Il est préférable de considérer dans ce cas que le composant imbriqué fait partie intégrante du composant qui l'héberge et qu'il doit en avoir sa propre implémentation.
 
 <a name="documentation"></a>
 ### Documentation
