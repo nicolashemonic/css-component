@@ -182,9 +182,9 @@ A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaSc
 ```
 
 ```html
-<ul class="this-button button-green">
+<a class="this-button button-green">
    <i class="button-icon"></i> Sign Up
-</ul>
+</a>
 ```
 
 
