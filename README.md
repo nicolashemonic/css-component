@@ -146,6 +146,8 @@ A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaSc
 ## Exemple
 
 ```css
+/* component */
+
 .this-button {
 	display: inline-block;
 	padding: 0 10px;
@@ -154,6 +156,8 @@ A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaSc
 	font-size: 14px;
 	color: #fff;
 }
+
+	/* descendent */
 
 	.button-icon {
 		display: inline-block;
