@@ -109,7 +109,7 @@ Elle permet de décliner l'affichage du composant sous différents styles (par e
 La classe d'un descendant d'un composant commence toujours par le nom de celui-ci :  
 `component-name-<descendent-name>`
 
-La classe est attachée à un noeud du composant, celle-ci applique un style directement sur l'élément HTML sur lequel elle est ajoutée (par exemple une ligne dans une liste, une icone dans un bouton).
+Elle applique un style directement sur un élément HTML contenu dans le composant sur lequel elle est ajoutée (par exemple une ligne dans une liste, une icone dans un bouton).
 
 ```css
 .component-name-descendent-name { }
@@ -127,7 +127,7 @@ La classe est attachée à un noeud du composant, celle-ci applique un style dir
 La classe d'un qualifieur attachée à un composant commence toujours par le mot clé `is` :  
 `is-<qualifier-name>`
 
-Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé, affiché - masqué, etc).
+Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé, affiché - masqué, etc) du composant ou de l'un de ses déscendants.
 
 Il est interdit de styler cette classe directement, elle doit être utilisée conjointement avec une classe du composant. Cela veut dire aussi que le mot clé `is` est réservé à cet usage exclusivement.
 
