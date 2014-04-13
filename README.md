@@ -18,7 +18,7 @@ Un composant graphique est un élément de base d'une interface graphique avec l
 <a name="composant-autonome"></a>
 ### Composant autonome
 
-Chaque composant est autonome. Le CSS qui lui est propre ne fait référence à un quelconque contexte que ce soit (pas de largeur si possible, pas de positionnement dans l'espace, pas de marge, etc). 
+Chaque composant est autonome. Le CSS qui lui est propre ne fait référence à aucun contexte que ce soit (pas de largeur si possible, pas de positionnement dans l'espace, pas de marge, etc). 
 
 Il possède son propre HTML, CSS, JavaScript ou tout autre ressource limitant ainsi toute dépendance au contexte d'affichage dans lequel il évolue. Idéalement, le CSS et le JavaScript sont écrits dans des fichiers qui leurs sont propres afin de les extraires facilement du contexte dans lequel ils sont ancrés.
 
@@ -46,7 +46,7 @@ La compléxité est un problème important pour les grosses applications évolut
 
 Tout d'abord, limiter au maximum la réutilisation de code à travers les composants. Il est préférable d'isoler chaque composant plutot que d'essayer de limiter la répétition de ses propriétés en les mutualisant. Ceci aurait pour incidence de rendre des composants dépendants entre eux.
 
-Un composant _a_ ne devrait pas connaître un composant _b_ qui lui est imbriqué. Il est préférable de considérer dans ce cas que le composant imbriqué fait partie intégrante du composant qui l'héberge et qu'il doit en avoir sa propre implémentation.
+Un composant _a_ ne devrait pas connaître un composant _b_ qui lui est imbriqué. Il est préférable de considérer dans ce cas que le composant _b_ imbriqué fait partie intégrante du composant _a_ qui l'héberge et qu'il doit en avoir sa propre implémentation.
 
 <a name="documentation"></a>
 ### Documentation
