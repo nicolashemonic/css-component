@@ -29,7 +29,7 @@ Un composant répond à un besoin qui lui est propre. Il est conseillé de limit
 
 Si le besoin est trop éloigné de sa conception originale il est préférable d'en créer un nouveau pour répondre plus précisément au nouveau besoin (même si il porte le même nom - il ne sera pas utilisé sur la même page).
 
-Une <a name="variation">variation</a> ne devrait pas modifier radicalement l'apparence du composant ou demander à l'utilisateur de comprendre comment il fonctionne.
+Une [variation](#variation) ne devrait pas modifier radicalement l'apparence du composant ou demander à l'utilisateur de comprendre comment il fonctionne.
 
 <a name="dependance-au-dom"></a>
 ### Dépendance au DOM
