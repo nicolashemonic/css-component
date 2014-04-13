@@ -93,7 +93,7 @@ Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture d
 La classe d'une variation d'un composant commence par le nom de celui-ci séparée par deux tirets :  
 `component-name--<variation-name>`
 
-Elle permet de décliner l'affichage du composant sous différents styles (par exemple un bouton bleu, vert, rouge). La classe doit être ajoutée à l'élément HTML en plus de la classe du composant.
+Elle permet de décliner l'affichage du composant sous différents styles (par exemple un bouton bleu, vert, rouge). La classe doit être ajoutée à l'élément HTML en plus de la classe du composant. Cela veut dire aussi que si le composant comporte plusieurs variations il ne possède pas de _thème_ par défaut afin de limiter toute surcharge inutile.
 
 ```css
 .component-name--variation-name { }
