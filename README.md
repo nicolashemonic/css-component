@@ -20,7 +20,7 @@ Un composant graphique est un élément de base d'une interface graphique avec l
 
 Chaque composant est autonome. Le CSS qui lui est propre ne fait aucune référence à un quelconque contexte que ce soit (pas de largeur si possible, pas de positionnement dans l'espace, pas de marge, etc). 
 
-Il possède son propre HTML, CSS, JavaScript ou tout autre ressource limitant toute dépendance au contexte d'affichage dans lequel il évolue. Idéalement, le CSS et le JavaScript sont écrits dans des fichiers qui leurs sont propre afin de les extraire facilement du contexte dans lequel ils sont ancrés.
+Il possède son propre HTML, CSS, JavaScript ou tout autre ressource limitant ainsi toute dépendance au contexte d'affichage dans lequel il évolue. Idéalement, le CSS et le JavaScript sont écrits dans des fichiers qui leurs sont propres afin de les extraires facilement du contexte dans lequel ils sont ancrés.
 
 <a name="creer-vaut-mieux-que-modifier"></a>
 ### Créer plutôt que modifier
@@ -29,7 +29,7 @@ Un composant répond à un besoin qui lui est propre. Il est conseillé de limit
 
 Si le besoin est trop éloigné de sa conception originale il est préférable d'en créer un nouveau pour répondre plus précisément au nouveau besoin.
 
-Une variation ne devrait pas modifier radicalement l'apparence du composant ou demander à l'utilisateur de comprendre comment il fonctionne.
+Une <a name="variation">variation</a> ne devrait pas modifier radicalement l'apparence du composant ou demander à l'utilisateur de comprendre comment il fonctionne.
 
 <a name="dependance-au-dom"></a>
 ### Dépendance au DOM
@@ -37,7 +37,7 @@ Une variation ne devrait pas modifier radicalement l'apparence du composant ou d
 De manière générale, le style appliqué à un élément HTML doit correspondre à une classe. 
 
 Il est important de ne pas appliquer de style à un élément particulier du DOM ou à une structure particulière du DOM.
-Cela limite très fortement la dépendance à la structure HTML et améliore grandement la robustesse de l'intégration tout en facilitant la lecture du CSS.
+Cela limite très fortement la dépendance à la structure HTML et améliore grandement la robustesse de l'intégration tout en facilitant sa lecture.
 
 <a name="faible-encapsulation"></a>
 ### Faible encapsulation
@@ -46,7 +46,7 @@ La compléxité est un problème important pour les grosses applications évolut
 
 Tout d'abord, limiter au maximum la réutilisation de code à travers les composants. Il est préférable d'isoler chaque composant plutot que d'essayer de limiter la répétition de ses propriétés en les mutualisant. Ceci aurait pour incidence de rendre des composants dépendants entre eux.
 
-Un composant ne devrait pas avoir connaissance de l'éxistance ou de l'apparence d'un composant qui lui est imbriqué. Il est préférable de considérer dans ce cas que le composant imbriqué fait partie intégrante du composant et qu'il doit en avoir sa propre implémentation.
+Un composant ne devrait pas avoir connaissance de l'éxistance ou de l'apparence d'un composant qui lui est imbriqué. Il est préférable de considérer dans ce cas que le composant imbriqué fait partie intégrante du composant qui l'héberge et qu'il doit en avoir sa propre implémentation.
 
 <a name="documentation"></a>
 ### Documentation
@@ -93,7 +93,7 @@ Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture d
 La classe d'une variation d'un composant commence par le nom de celui-ci séparé par deux tirets :  
 `component-name--<variation-name>`
 
-Elle permet de décliner l'affichage du composant sous différents styles. La classe doit être ajouté à l'élément HTML en plus de la classe du composant.
+Elle permet de décliner l'affichage du composant sous différents styles (par exemple un bouton bleu, vert, rouge). La classe doit être ajouté à l'élément HTML en plus de la classe du composant.
 
 ```css
 .component-name--variation-name { }
@@ -109,7 +109,7 @@ Elle permet de décliner l'affichage du composant sous différents styles. La cl
 La classe d'un descendant d'un composant commence toujours par le nom de celui-ci :  
 `component-name-<descendent-name>`
 
-La classe est attachée à un noeud du composant, celle-ci applique un style directement sur l'élément HTML sur lequel elle est ajoutée.
+La classe est attachée à un noeud du composant, celle-ci applique un style directement sur l'élément HTML sur lequel elle est ajoutée (par exemple une ligne dans une liste, une icone dans un bouton).
 
 ```css
 .component-name-descendent-name { }
@@ -129,7 +129,7 @@ La classe d'un qualifieur attachée à un composant commence toujours par le mot
 
 Elle peut être utilisée pour qualifier une apparence (couleur, typo, etc) ou/et un état (ouvert - fermé, affiché - masqué, etc).
 
-Il est interdit de styler cette classe directement, elle doit être utilisée conjointement avec une classe du composant.
+Il est interdit de styler cette classe directement, elle doit être utilisée conjointement avec une classe du composant. Cela veut dire aussi que le mot clé `is` est réservé à cet usage exclusivement.
 
 A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaScript pour modifier l'état du composant à un instant _t_.
 
@@ -146,40 +146,40 @@ A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaSc
 ## Exemple
 
 ```css
-.this-level {
-	margin: 0;
-	padding: 0;
+.this-button {
+	display: inline-block;
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
 }
 
-	.level-item {
-		height: 50px;
-		line-height: 50px;
-		padding: 0 10px 0 25px;
-		color: #888;
-		font-size: 14px;
-		position: relative;
+	.button-icon {
+		display: inline-block;
+		margin: 0 3px 0 0;
 	}
 
-	.level-item + .level-item {
-		border-top: 1px solid #d7d7d7;
-	}
+/* variation */
 
-		.level-item-icon {
-			display: none;
-			position: absolute;
-			left: 10px;
-			top: 14px;
-			font-size: 22px;
-		}
+.button--blue {
+	background-color: blue;
+}
+
+.button--green {
+	background-color: blue;
+}
+
+/* qualifier */
+
+.this-button.is-disabled {
+	background-color: gray;
+}
 ```
 
 ```html
-<ul class="this-level">
-    <li class="level-item"><i class="level-item-icon"></i> Too High</li>
-    <li class="level-item"><i class="level-item-icon"></i> Higher</li>
-    <li class="level-item"><i class="level-item-icon"></i> Market Level</li>
-    <li class="level-item is-selected"><i class="level-item-icon"></i> Lower</li>
-    <li class="level-item"><i class="level-item-icon"></i> Too Low</li>
+<ul class="this-button button-green">
+   <i class="button-icon"></i> Sign Up
 </ul>
 ```
 
