@@ -68,10 +68,10 @@ Un composant est constitué de la manière suivante :
 <a name="composant"></a>
 ### Composant
 
-La classe d'un composant commence toujours par le mot clé `this` qui permet de l'identifier facilement et d'en délimiter sa porté.
+La classe d'un composant commence toujours par un espace de nom `<namespace>` qui permet de l'identifier facilement et d'en délimiter sa porté.
 
 Son nom est l'élément central de toute sa structure :  
-`this-<component-name>[--variation-name|-descendent-name]`
+`<namespace>-<component-name>[--variation-name|-descendent-name]`
 
 Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture du HTML et du CSS:
 
@@ -80,11 +80,11 @@ Cette convention comporte plusieurs bénéfices pour la lecture et l'écriture d
 * Le poids du sélecteur reste faible (surcharge aisée)
 
 ```css
-.this-component-name { }
+.namespace-component-name { }
 ```
 
 ```html
-<div class="this-component-name"></div>
+<div class="namespace-component-name"></div>
 ```
 
 <a name="variation"></a>
@@ -100,7 +100,7 @@ Elle permet de décliner l'affichage du composant sous différents styles (par e
 ```
 
 ```html
-<div class="this-component-name component-name--variation-name"></div>
+<div class="namespace-component-name component-name--variation-name"></div>
 ```
 
 <a name="descendant"></a>
@@ -116,7 +116,7 @@ Elle applique un style directement sur un élément HTML contenu dans le composa
 ```
 
 ```html
-<div class="this-component-name component-name--variation-name">
+<div class="namespace-component-name component-name--variation-name">
   <p class="component-name-descendent-name"></p>
 </div>
 ```
@@ -138,7 +138,7 @@ A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaSc
 ```
 
 ```html
-<div class="this-component-name component-name--variation-name">
+<div class="namespace-component-name component-name--variation-name">
   <p class="component-name-descendent-name is-qualifier-name"></p>
 </div>
 ```
@@ -148,7 +148,7 @@ A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaSc
 ```css
 /* component */
 
-.this-button {
+.app-button {
 	display: inline-block;
 	padding: 0 10px;
 	height: 30px;
@@ -176,13 +176,13 @@ A noter qu'une classe qualifieur peut être ajoutée ou supprimée par le JavaSc
 
 /* qualifier */
 
-.this-button.is-disabled {
+.app-button.is-disabled {
 	background-color: gray;
 }
 ```
 
 ```html
-<a class="this-button button--green">
+<a class="app-button button--green">
    <i class="button-icon"></i> Sign Up
 </a>
 ```
